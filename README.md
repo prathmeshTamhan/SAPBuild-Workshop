@@ -4,7 +4,7 @@
 
 ## Description
 
-This repository contains the material for the SAP Build session called [Create Sales Order Workflow with SAP Build].
+This repository contains the material for the SAP Build session called [Create Sales Order Workflow with SAP Build](https://github.com/AshwinKatkar/SAPBuild-Workshop#create-sales-order-workflow-with-sap-build).
 
 ## Overview
 
