@@ -17,22 +17,19 @@ Scenario: Sales Order Approval with SAP Build Apps & SAP Build Process Automatio
 
 ## Requirements
 
-There are no dedicated requirement for this exercise. But in case you want to gain some further knowledge around SAP Build Process Automation, please feel free to attend these virtual SAP TechEd workshops:
+There are no dedicated requirement for this exercise. But in case you want to gain some further knowledge around SAP Build Process Automation, please feel free to attend these virtual SAP workshops:
 - Learn how to build a process, decisions and RPA bots from scratch in [AD182 - Build Process Automations and Extensions to SAP Solutions](https://go3.events.sap.com/sapteched/hybrid/2022/reg/flow/sap/saptech2022/sapteched2022catalog/page/catalog/session/1661198036950001EHbd)
 
 ## Exercises
 
-- [Exercise 1 - Create SAP Build Apps Project](/exercises/1_CreateAppGyverProject)
-- [Exercise 2 - Install Desktop Agent 3](/exercises/2_InstallDesktopAgent3)
-- [Exercise 3 - Import Sample Business Process From SAP Build Process Automation Store](/exercises/3_ImportSampleProcess)
-- [Exercise 4 - Modify the Process](/exercises/4_TriggerProcess)
-- [Exercise 5 - Modify Automation](/exercises/5_ModifyAutomation)
-- [Exercise 6 - Release, Deploy and Test Business Process](/exercises/6_ReleaseDeployProcess)
-- [Exercise 7 - Test SAP Build Apps and Business Process](/exercises/7_TestingEndToEndScenario)
+- [Exercise 1 - Create Sales Order Business Process](/exercises/1_CreateSalesOrder)
+- [Exercise 2 - Run the Sales Order Business Process](/exercises/2_RunSalesOrder)
+- [Exercise 3 - Create SAP Build App to Trigger Workflow](/exercises/3_CreateBuildApp)
+- [Exercise 4 - Populate Dropdown with SAP Data (ES5)](/exercises/4_PopulateSAPData)
+
 
 ## How to obtain support
 
 Support for the content in this repository is available during the actual time of the online session for which this content has been designed. Otherwise, you may request support via the [Issues](../../issues) tab.
 
 ## License
-Copyright (c) 2022 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](LICENSES/Apache-2.0.txt) file.
