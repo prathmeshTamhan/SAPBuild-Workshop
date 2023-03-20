@@ -8,9 +8,9 @@ This repository contains the material for the SAP Build session called [Create S
 
 ## Overview
 
-This session covers how to build apps, processes with workflows, and extract invoice data with BOTS. Leverage pre-built sample content package and enhance the sample process to integrate with Apps. Finally, test your integrated scenario.
+Create an SAP Build Apps application that lets users enter sales order details, and then trigger an SAP Build Process Automation approval process for that sales order. The mission shows how to integrate SAP Build Apps so it can communicate via API with SAP Build Process Automation. Finally, test your integrated scenario.
 
-Scenario: Invoice Approval with SAP Build Apps & SAP Build Process Automation
+Scenario: Sales Order Approval with SAP Build Apps & SAP Build Process Automation
 
 
   ![Overview](exercises/4_TriggerProcess/images/Overview.png)
