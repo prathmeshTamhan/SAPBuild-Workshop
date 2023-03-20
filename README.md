@@ -1,4 +1,4 @@
-[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/teched2022-AD160)](https://api.reuse.software/info/github.com/SAP-samples/teched2022-AD160)
+//[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/teched2022-AD160)](https://api.reuse.software/info/github.com/SAP-samples/teched2022-AD160)
 
 # AD160 - Build Robust Apps Enhanced with Process Automation and Low-Code Tooling
 
