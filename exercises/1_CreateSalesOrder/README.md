@@ -1,14 +1,15 @@
-### Table of Contents
-- [Overview](#overview)
-- [Create New Project](#buildapps)
-- [Create UI](#UI)
-- [Data Connection](#data)
-- [Logic for Upload button](#upload)
-- [Logic for Submit Button](#submit)
-- [Summary](#Summary)
+## Table of Contents
+- [Create a business process project](#project)
+- [Create a business process](#process)
+- [Create an Data Type](#data)
+- [Create and Configure Approval form](#aprrovalform)
+- [Create and Configure Order Approval Notification form](#appnotification)
+- [Create and configure Order Rejection Notification Form](#rejnotification)
+- [Create and Configure Process Condition](#processcondi)
+- [Create and Configure Auto Approval Notification](#autoapproval)
+- [Save the Project](#save)
 
-
-# Overview <a name="overview"></a>
+# Overview <a name="project"></a>
 
 
 In this exercise, you will build your app in SAP Build Apps to upload invoices.
@@ -16,7 +17,7 @@ In this exercise, you will build your app in SAP Build Apps to upload invoices.
 ![Scenario](images/scenario_appgyver.png)
 
 
-## Create a Build Apps Project <a name="buildapps"></a>
+## Create a Build Apps Project <a name="process"></a>
 
 1. From [SAP Build Lobby](https://da160-96ork4sc-applicationdevelopment.lcnc.cfapps.eu10.hana.ondemand.com/lobby), click on <b>Create</b> and then select <b>Build Apps Project</b>.<br>
 
@@ -31,7 +32,7 @@ In this exercise, you will build your app in SAP Build Apps to upload invoices.
 <br><br>![Name the project](images/01c.png)
 
 
-## Create UI <a name="UI"></a>
+## Create UI <a name="data"></a>
 
 1. You will be redirected to <b>Build Apps Composer</b>, which is like an IDE for SAP Build Apps. On the canvas, you can already see a <b>Title</b> and a <b>Text</b> component.<br><br>![home page](images/01.png)
 
@@ -121,7 +122,7 @@ Now, the <b>PROPERTIES</b> tab on the right-hand side will show the properties o
 27. Click on <b>SAVE</b> on the top right corner to save the UI created so far.<br><br>
 ![](images/27.png)
 
-## Data Connection <a name="Data"></a>
+## Data Connection <a name="aprrovalform"></a>
 
 Now, your application will be connected to Document Management System and SAP Process Automation. First, you should enable BTP authentication to connect your app to SAP Process Automation via Destinations.
 
@@ -218,7 +219,7 @@ Choose <b>ADD.</b>
 ![](images/60.png)
 
 
-## Create Logic for Upload button <a name="upload"></a>
+## Create Logic for Upload button <a name="appnotification"></a>
 
 1. Go to the **UI CANVAS**. Select the <b>Upload your Invoice</b> button and click on the grey bar on the bottom to open the logic composer. <br><br>
 ![](images/28.png)
@@ -263,7 +264,7 @@ path</b>.<br><br>
 11. Click on <b>SAVE</b>.<br><br>
 ![](images/104.png)
 
-## Create Logic for Submit button <a name="submit"></a>
+## Create Logic for Submit button <a name="rejnotification"></a>
 
 1. Select the <b>Submit</b> button and click on the grey bar on the bottom to open the logic composer.<br><br>
 ![](images/63.png)
@@ -367,7 +368,7 @@ Click on <b>SAVE</b>.<br><br>
 
 29. **Save** your work.
 
-## Summary <a name="summary"></a>
+## Summary <a name="processcondi"></a>
 
 You have build an app and completed the below steps.
 
