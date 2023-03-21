@@ -55,54 +55,55 @@ In this exercise, you will build your app in SAP Build Apps to upload invoices.
    ![Image](images/1100.png) <br>
    Still with the container selected, open the <b> Style </b> tab, and click <b> Edit </b> for the Layout Container. <br> ![Image](images/1200.png)
    For the background color, select **Level 4 background.** <br>
-   For padding, set the padding on all 4 sides to 16px by going to **Theme** and selecting the **L** size. <br> ![Image](images/1300.png)
+   For padding, set the padding on all 4 sides to 16px by going to **Theme** and selecting the **L** size. <br> ![Image](images/1300.png) <br>
    For **Effects**, create a shadow by setting these properties: <br>
    **Enable Shadow** : True <br>
    **Shadow**: Content Shadow 0 <br>
    **Color** : Any static color you like (I chose #8e8989) <br>
-   Let’s save the style by scrolling up, clicking <b>New Style,</b> entering Layout Form Container, and clicking <b> OK.</b>
+   Let’s save the style by scrolling up, clicking <b>New Style,</b> entering Layout *Form Container*, and clicking <b> OK.</b>
 
 9. Inside the outer container, add another container, and inside that container add a text and input field. The result should look like this: <br><br>
-   ![create variable](images/09.png) <br><br>
+   ![Image](images/1400.png) <br><br>
    For the inner container, go to **Layout** tab, and under **Layout** set the container to **Horizontal**. Then, set **Align components** to middle. <br>
-   For the text field, go to **Layout** tab and set the width to exactly 75px.<br><br>
+   ![Image](images/1500.png) <br>
+   For the text field, go to **Layout** tab and set the width to exactly 75px.<br>
+   ![Image](images/1600.png)<br>
    For the input field, delete _Label_ from the **Label** property. <br><br>
 
-10. From the Tree view, copy the inside container and paste it inside the outer ( Form ) container until you have 4 fields..<br><br>
+10. From the Tree view, copy the inside container and paste it inside the outer ( Form ) container until you have 4 fields..<br>
+![Image](images/1700.png)<br>
     <b>Fields </b> <br>
     Ship To Party <br>
     Material <br>
     Order Amount <br>
     Delivery Date<br>
-    ![create another variable](images/10.png)
+    ![Image](images/1800.png)
 
-11. At the bottom of the page (outside the outside container), add a button. In the **Properties** tab, set the **Label** to _Get Approval_. <br><br>
-    ![variable type](images/11.png)
+11. At the bottom of the page (outside the outside container), add a button. In the **Properties** tab, set the **Label** to *Get Approval*. <br><br>
+    ![Image](images/1900.png)
 
 ## Enable SAP BTP authentication <a name="data"></a>
 
 You need to enable SAP BTP authentication since you want to use SAP BTP destinations.
 
 1.  Go to the <b>Auth</b> tab.<br>
-    ![](images/36.png)
 
 2.  Click Enable <b>Authentication</b>.<br>
-    ![](images/37.png)
+    ![Image](images/2000.png)
 
 3.  Select <b> SAP BTP Authentication.</b> On the confirmation popup, click <b>OK</b>.<br>
-    ![](images/38.png)
 
 ## Create data resource to SAP Build Process Automation <a name="approvalform"></a>
 
 As part of setting up SAP Build Process Automation, you created a destination so you can make calls to the SAP Build Process Automation APIs, including the one that lets you trigger a workflow.
 <br><br>
 Now you will set up the connection from your app to SAP Build Process Automation on your tenant, using that destination. <br><br>
-![](images/28.png) <br>
+ <br>
 
 1.  Open the **Data** tab, at the top of the page <br><br>
 2.  Scroll down, and click <b>Create Data Entity > SAP BTP Destination REST API Integration</b>.<br>
     The configuration screen appears, starting with the **Base** panel. <br>
-    ![](images/29.png)
+    ![Image](images/2100.png)
 
 3.  On the Base panel, enter the following:<br><br>
 <table>
@@ -112,16 +113,22 @@ Now you will set up the connection from your app to SAP Build Process Automation
   </tr>
   <tr>
     <td>Data resource name</td>
-    <td>Trigger Workflow</td>
+    <td><i>Trigger Workflow</i></td>
   </tr>
   <tr>
     <td>BTP destination name</td>
-    <td>sap-process-destination (or the destination you created, if you created your own) </td>
+    <td><i>sap-process-destination (or the destination you created, if you created your own)</i> </td>
   </tr>
-  </table>
+  </table> <br>
+
+   ![Image](images/2200.png)
+
 <br><br>
-Under Resource schema, click Add New and add a field of type <i>Object</i> and with the name salesorderdetails.<br><br>
-Click on the new field, and add the following sub-fields to the object: <br><br>
+Under <b>Resource schema</b>, click Add New and add a field of type <i>Object</i> and with the name  **salesorderdetails** .<br><br>
+Click on the new field, and add the following sub-fields to the object: <br>
+
+   ![Image](images/2300.png)
+   <br>
 <b>IMPORTANT:</b> Click on the <b> Add New </b> button BELOW the salesorderdetails field. <br><br>
 <table>
   <tr>
@@ -166,11 +173,11 @@ Click on the new field, and add the following sub-fields to the object: <br><br>
   </tr>
 
 </table>
-    ![](images/30.png)
 
 4.  Click the **create** panel.<br>
     Then enable the create action with the toggle button.<br><br>
-    ![](images/31.png) <br>
+    ![Image](images/2400.png) <br>
+       ![Image](images/2500.png) <br>
 
 5.  For **Request headers**, click the binding **X**, then **List of values**.<br>
 
@@ -200,20 +207,19 @@ Click **Add a value**, and add the following key-value pair:<br>
 
         ![](images/33.png)
 
-7.  Click Save Data Resource (bottom right). <br>
+7.  Click **Save Data Resource** (bottom right). <br>
     Click Save (in the upper right to save all your changes to the project).<br>
     ![](images/34.png)
 
 ## Test the trigger <a name="appnotification"></a>
 
 1. Open the data resource again by clicking it.<br>
-   ![](images/63.png)
+   ![Images](images/2600.png)
 
 2. Click **create** on the left, and then the **Test tab**..<br>
-   ![](images/64.png)
 
 3. Enter values for the fields (really, you only need to enter an order amount), and then scroll down and click **Run Test**. <br>
-   ![](images/65.png)
+   ![Images](images/2700.png)
 
 **IMPORTANT**: Date fields must be in the format of 2022-12-25 and the order amount must be a number.<br><br>
 If all works **OK**, you will get a **201** status code and a response with information about the process instance you just triggered, something like this: <br><br>
@@ -234,10 +240,14 @@ Javascript: <br><br>
 "startedBy": "sb-clone-41c25609-33a1-9999-97d8-34fcd2316008!b3591|workflow!b116",<br>
 "completedAt": null<br>
 }<br>
+![Images](images/2800.png) <br>
 
 If you’ve gotten to here, your integration with SAP Build Process Automation is working!!<br>
 You can go into the SAP Build Process Automation monitoring and see there the process you just triggered, and check the context to make sure the parameters were sent properly. <br>
+![Images](images/2900.png)<br>
 You can also check the Inbox to see the forms were created and the values properly passed into the workflow.<br>
+![Images](images/3000.png)<br>
+
 
 ## Create data variable <a name="rejnotification"></a>
 
