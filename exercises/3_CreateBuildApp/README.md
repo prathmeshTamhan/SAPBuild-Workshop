@@ -1,4 +1,5 @@
 ### Table of Contents
+<<<<<<< Updated upstream
 - [Create a SAP BUid App](#project)
 - [Create a business process](#process)
 - [Create an Data Type](#data)
@@ -392,4 +393,8 @@ You have build an app and completed the below steps.
 ![Summary](images/Scenario_summary.png)
 
 Continue to - [Exercise 2 - Install and configure Desktop Agent 3](../2_InstallDesktopAgent3/Readme.md) and get started with SAP Build Process Automation.
+>>>>>>> Stashed changes
+=======
+
+- [Create a business process project](#project)
 >>>>>>> Stashed changes
