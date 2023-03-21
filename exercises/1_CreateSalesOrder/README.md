@@ -5,7 +5,7 @@
 - [Create and Configure Approval form](#aprrovalform)
 - [Create and Configure Order Approval Notification form](#appnotification)
 - [Create and configure Order Rejection Notification Form](#rejnotification)
-- [Create and Configure Process Condition](#processcondi)
+- [Create and Configure Process Condition](#processcondition)
 - [Create and Configure Auto Approval Notification](#autoapproval)
 - [Save the Project](#save)
 

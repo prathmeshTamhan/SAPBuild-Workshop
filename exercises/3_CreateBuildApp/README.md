@@ -16,46 +16,46 @@
 
 In this exercise, you will build your app in SAP Build Apps to upload invoices.
 
-![Scenario]
+(images/1000.png)
 
 ## Create a new app project <a name="project"></a>
 
 1. From [SAP Build Lobby](https://da160-96ork4sc-applicationdevelopment.lcnc.cfapps.eu10.hana.ondemand.com/lobby), Go to the SAP Build lobby, and click on <b>Create</b>.<br>
 
-<br>![Create the project](images/01a.png)
+<br>![Create the project] ![Image](images/100.png)
 
 2. Select <b>Build an Application.</b>
-   <br><br>![Name the project](images/01c.png)
+   <br><br>![Name the project] ![Image](images/200.png)
 
 3. Select <b>Web & Mobile Application.</b>
-   <br><br>![Name the project](images/01c.png)
+   <br><br>![Name the project] ![Image](images/300.png)
 
 4. For the project name, enter <i>Sales Order Trigger</i> then click <b> Create.</b>
-   <br><br>![Name the project](images/01c.png)
+   <br><br>![Name the project] ![Image](images/400.png)
 
 ## Create the sales order page <a name="process"></a>
 
-1. By default your new application contains a page with title and text fields. In this step, you will focus on turning this page into your app, including how to build a UI and stylize the UI elements. <br><br>![home page](images/01.png)
+1. By default your new application contains a page with title and text fields. In this step, you will focus on turning this page into your app, including how to build a UI and stylize the UI elements. <br><br>![home page]
 
-2. Select the text field, and click the <b> X </b> to delete it. <br><br>![Title component](images/02%202.png)
+2. Select the text field, and click the <b> X </b> to delete it. <br><br>![Title component](images/500.png)
 
-3. Click on an open area, and in the <b>Properties</b> tab, change the <b>Page Name</b> to <i>Create Sales Order.</i><br><br>![text component](images/03.png)
+3. Click on an open area, and in the <b>Properties</b> tab, change the <b>Page Name</b> to <i>Create Sales Order.</i><br><br>![text component] ![Image](images/600.png)
 
-4. Select the <b> Style </b> tab. <br><br>![input component](images/04.png)
+4. Select the <b> Style </b> tab. <br><br>![input component](images/700.png)
 
-5. Click the <b> Background Color </b> (App Background), and then select New Palette.<br><br>![input properties](images/05.png)
+5. Click the <b> Background Color </b> (App Background), and then select New Palette.<br><br>![input properties]![Image](images/800.png)
 
-6. For the color, enter #F3D6A0, name the color SAP Orange Light, and click <b> Save.</b>(images/06.png)
+6. For the color, enter _#F3D6A0_, name the color _SAP Orange Light_, and click <b> Save.</b>
 
-7. Click the title field, and in the <b>Properties</b> tab change the <b>Content </b> text to Sales Order Workflow.<br><br>
-   ![Image](images/07.png)
+7. Click the title field, and in the <b>Properties</b> tab change the <b>Content </b> text to _Sales Order Workflow_.<br><br>
+   ![Image](images/900.png)
 
-8. To the canvas, drag a Container component. With the container selected, in the <b> Properties </b> tab under Advanced Properties, change the <b> Component display name </b> to Form.
+8. To the canvas, drag a Container component. With the container selected, in the <b> Properties </b> tab under Advanced Properties, change the <b> Component display name </b> to _Form_.
 
-   ![Variables](images/08.png) <br>
-   Still with the container selected, open the <b> Style </b> tab, and click <b> Edit </b> for the Layout Container. <br>
+   ![Image](images/1100.png) <br>
+   Still with the container selected, open the <b> Style </b> tab, and click <b> Edit </b> for the Layout Container. <br> ![Image](images/1200.png)
    For the background color, select **Level 4 background.** <br>
-   For padding, set the padding on all 4 sides to 16px by going to **Theme** and selecting the **L** size. <br>
+   For padding, set the padding on all 4 sides to 16px by going to **Theme** and selecting the **L** size. <br> ![Image](images/1300.png)
    For **Effects**, create a shadow by setting these properties: <br>
    **Enable Shadow** : True <br>
    **Shadow**: Content Shadow 0 <br>
