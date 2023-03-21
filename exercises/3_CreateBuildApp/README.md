@@ -60,7 +60,7 @@ In this exercise, you will build your app in SAP Build Apps to upload invoices.
    **Enable Shadow** : True <br>
    **Shadow**: Content Shadow 0 <br>
    **Color** : Any static color you like (I chose #8e8989) <br>
-   Let’s save the style by scrolling up, clicking <b>New Style,</b> entering Layout *Form Container*, and clicking <b> OK.</b>
+   Let’s save the style by scrolling up, clicking <b>New Style,</b> entering Layout _Form Container_, and clicking <b> OK.</b>
 
 9. Inside the outer container, add another container, and inside that container add a text and input field. The result should look like this: <br><br>
    ![Image](images/1400.png) <br><br>
@@ -71,7 +71,7 @@ In this exercise, you will build your app in SAP Build Apps to upload invoices.
    For the input field, delete _Label_ from the **Label** property. <br><br>
 
 10. From the Tree view, copy the inside container and paste it inside the outer ( Form ) container until you have 4 fields..<br>
-![Image](images/1700.png)<br>
+    ![Image](images/1700.png)<br>
     <b>Fields </b> <br>
     Ship To Party <br>
     Material <br>
@@ -79,7 +79,7 @@ In this exercise, you will build your app in SAP Build Apps to upload invoices.
     Delivery Date<br>
     ![Image](images/1800.png)
 
-11. At the bottom of the page (outside the outside container), add a button. In the **Properties** tab, set the **Label** to *Get Approval*. <br><br>
+11. At the bottom of the page (outside the outside container), add a button. In the **Properties** tab, set the **Label** to _Get Approval_. <br><br>
     ![Image](images/1900.png)
 
 ## Enable SAP BTP authentication <a name="data"></a>
@@ -98,7 +98,7 @@ You need to enable SAP BTP authentication since you want to use SAP BTP destinat
 As part of setting up SAP Build Process Automation, you created a destination so you can make calls to the SAP Build Process Automation APIs, including the one that lets you trigger a workflow.
 <br><br>
 Now you will set up the connection from your app to SAP Build Process Automation on your tenant, using that destination. <br><br>
- <br>
+<br>
 
 1.  Open the **Data** tab, at the top of the page <br><br>
 2.  Scroll down, and click <b>Create Data Entity > SAP BTP Destination REST API Integration</b>.<br>
@@ -121,15 +121,16 @@ Now you will set up the connection from your app to SAP Build Process Automation
   </tr>
   </table> <br>
 
-   ![Image](images/2200.png)
+![Image](images/2200.png)
 
 <br><br>
-Under <b>Resource schema</b>, click Add New and add a field of type <i>Object</i> and with the name  **salesorderdetails** .<br><br>
+Under <b>Resource schema</b>, click Add New and add a field of type <i>Object</i> and with the name **salesorderdetails** .<br><br>
 Click on the new field, and add the following sub-fields to the object: <br>
 
-   ![Image](images/2300.png)
-   <br>
+![Image](images/2300.png)
+<br>
 <b>IMPORTANT:</b> Click on the <b> Add New </b> button BELOW the salesorderdetails field. <br><br>
+
 <table>
   <tr>
     <th>Field Name</th>
@@ -177,7 +178,7 @@ Click on the new field, and add the following sub-fields to the object: <br>
 4.  Click the **create** panel.<br>
     Then enable the create action with the toggle button.<br><br>
     ![Image](images/2400.png) <br>
-       ![Image](images/2500.png) <br>
+    ![Image](images/2500.png) <br>
 
 5.  For **Request headers**, click the binding **X**, then **List of values**.<br>
 
@@ -248,23 +249,19 @@ You can go into the SAP Build Process Automation monitoring and see there the pr
 You can also check the Inbox to see the forms were created and the values properly passed into the workflow.<br>
 ![Images](images/3000.png)<br>
 
-
 ## Create data variable <a name="rejnotification"></a>
 
 1. Back on the UI canvas, select **Variables**.<br>
-   ![](images/63.png)
 
 2. On the left, click **Data Variables**.<br>
-   ![](images/64.png)
 
 3. Click **Add Data Variable**, and choose **Trigger Workflow** as the data resource on which to base the data variable. <br>
-   ![](images/65.png)
+   ![Image](images/3001.png)
 
 4. On the right, choose **New data record**.<br>
-   ![](images/63.png)
+   ![Image](images/3002.png)
 
 5. Click **Save** (upper right).<br>
-   ![](images/64.png)
 
 ## Bind data variable to UI elements <a name="processcondition"></a>
 
@@ -272,7 +269,7 @@ You can also check the Inbox to see the forms were created and the values proper
 
 2. Click on the first input field (for **Customer**).
    In the Properties tab, click the **X** next to the **Value** field, and select **Data and Variables > Data Variables > Trigger Workflow1 > shipToParty**.<br>
-   ![](images/64.png)
+   ![Image](images/3003.png)
 
 3. Click **Save**<br><br>
 
@@ -292,26 +289,27 @@ You can also check the Inbox to see the forms were created and the values proper
 
 ## Add logic to trigger workflow <a name="autoapproval"></a>
 
-1. Click on the **Get Approval** button, and open the logic canvas by clicking **Add logic to Button1** at the bottom right.<br><br>
+1. Click on the **Get Approval** button, and open the logic canvas by clicking **Add logic to Button1** at the bottom right.<br>
+   ![Image](images/3004.png)<br>
 
-2. Drag a **Create record** flow function onto the canvas, and connect the component tap event to it.<br><br>
+2. Drag a **Create record** flow function onto the canvas, and connect the component tap event to it.<br> ![Image](images/3005.png)<br>
 
 3. Click on the **Create record** flow function and configure it in the **Properties** pane on the right.
    <br>
-   For **Resource name**, this should already be set to **Trigger Workflow**, since you have only one data resource.<br>
+   For **Resource name**, this should already be set to **Trigger Workflow**, since you have only one data resource.<br> ![Image](images/3006.png) <br>
    For **Record** , you have to bind each of the data variable fields to the appropriate record field. <br>
-   There are many ways to do binding. For **Properties** , you will use a formula. Click on the object binding button: ![](images/64.png) <br> <br>
+   There are many ways to do binding. For **Properties** , you will use a formula. Click on the object binding button: <br> ![Image](images/3008.png) <br>
    Click **Formula** , then click on the existing formula, and replace it with the following: <br>
    Javascript: <br>
    {salesorderdetails: {division: "1010", orderAmount: NUMBER(data["Trigger Workflow1"].salesorderdetails.orderAmount), shipToParty: data["Trigger Workflow1"].salesorderdetails.shipToParty, salesOrderType: "OR", shippingCountry: "Barbados", salesOrganisation: "10", distributionChannel: "1000", expectedDeliveryDate: data["Trigger Workflow1"].salesorderdetails.expectedDeliveryDate, material: data["Trigger Workflow1"].salesorderdetails.material}}
-   <br> <br>
+   <br>
 
-4. Click **Save**.<br><br>
+4. Click **Save**.<br>
 
-5. Drag a **Toast** flow function onto the canvas, and connect the **top** output of the Create record flow function to it. <br><br>
+5. Drag a **Toast** flow function onto the canvas, and connect the **top** output of the Create record flow function to it. <br> ![Image](images/3007.png)<br>
 
-6. Click on the Toast flow function and configure it in the Properties pane on the right. <br>
-   For Toast message, click on the ABC, and then select Formula > Formula. <br>
+6. Click on the **Toast** flow function and configure it in the **Properties** pane on the right. <br>
+   For **Toast message**, click on the **ABC**, and then select **Formula > Formula**. <br>
    Erase the quotation marks, and enter the following formula: <br>
    "Triggered process with ID: " + outputs["Create record"].response.id <br>
    Click **Save**.
@@ -321,10 +319,11 @@ You can also check the Inbox to see the forms were created and the values proper
 
 ## Run App <a name="save"></a>
 
-1. Click the Launch tab, and then Open Preview Portal. <br>
-2. Click Open web preview (left). <br>
+1. Click the **Launch** tab, and then **Open Preview Portal**. <br>
+   ![Image](images/3009.png) <br>
+2. Click **Open web preview** (left). <br>
 
-3. Select your project, Select Order Trigger.<br>
+3. Select your project, **Select Order Trigger**.<br> ![Image](images/3010.png) <br>
 4. Enter the following values in your form: <br>
 <table>
   <tr>
@@ -351,10 +350,12 @@ You can also check the Inbox to see the forms were created and the values proper
 5. Click Get Approval. <br>
    You process should be triggered and require approval (since the amount is 1000 or above). <br>
    You should see the toast message indicating the workflow was triggered, and with the process instance ID. <br>
+
+   ![Image](images/3011.png)
    You can also see the results of the call in SAP Build Process Automation. <br>
    Go to the Monitor tab, then Process and Workflow Instances. The first one should be the one you just triggered.<br>
    You can see the new process instance.<br>
    You can see the context, which is the values sent with the API. <br>
    You can also see the execution log, which in this case ran the auto-approve task because the amount was below 100000.<br>
-   The context field in yellow are the ones that you entered via the UI.<br>
+   The context field in yellow are the ones that you entered via the UI.<br> ![Image](images/3012.png)
    You can also see that the process instance ID is the same: in the toast message and in the upper right of the Monitor tab.
