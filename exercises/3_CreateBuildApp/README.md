@@ -12,4 +12,4 @@
 # Overview <a name="project"></a>
 
 
-In this exercise, you will build your app in SAP Build Apps to upload invoices.
+In this exercise, you will build your app in SAP Build Apps to upload invoice.
