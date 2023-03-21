@@ -16,22 +16,27 @@
 
 In this exercise, you will build your app in SAP Build Apps to upload invoices.
 
-(images/1000.png)
+![Image](images/1000.png)
 
 ## Create a new app project <a name="project"></a>
 
 1. From [SAP Build Lobby](https://da160-96ork4sc-applicationdevelopment.lcnc.cfapps.eu10.hana.ondemand.com/lobby), Go to the SAP Build lobby, and click on <b>Create</b>.<br>
 
-<br>![Create the project] ![Image](images/100.png)
+<br> 
+
+![Image](images/100.png)
 
 2. Select <b>Build an Application.</b>
-   <br><br>![Name the project] ![Image](images/200.png)
+   <br><br>
+    ![Image](images/200.png)
 
 3. Select <b>Web & Mobile Application.</b>
-   <br><br>![Name the project] ![Image](images/300.png)
+   <br><br>  
+   ![Image](images/300.png)
 
 4. For the project name, enter <i>Sales Order Trigger</i> then click <b> Create.</b>
-   <br><br>![Name the project] ![Image](images/400.png)
+   <br><br>
+    ![Image](images/400.png)
 
 ## Create the sales order page <a name="process"></a>
 
@@ -39,7 +44,7 @@ In this exercise, you will build your app in SAP Build Apps to upload invoices.
 
 2. Select the text field, and click the <b> X </b> to delete it. <br><br>![Title component](images/500.png)
 
-3. Click on an open area, and in the <b>Properties</b> tab, change the <b>Page Name</b> to <i>Create Sales Order.</i><br><br>![text component] ![Image](images/600.png)
+3. Click on an open area, and in the <b>Properties</b> tab, change the <b>Page Name</b> to <i>Create Sales Order.</i><br><br> ![Image](images/600.png)
 
 4. Select the <b> Style </b> tab. <br><br>![input component](images/700.png)
 
